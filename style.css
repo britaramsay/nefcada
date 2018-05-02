@@ -6,19 +6,67 @@
     margin:0
 }
 
+#sidebar {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.5)
+}
+
 .jumbotron {
-    margin: 0
+    margin: 0;
+    background-image: url('jumbotron-bg.jpg');
+    background-size: 100%
 }
 
 .jumbotron h1 {
-    margin-top: 0px
+    margin-top: 0px;
+    text-shadow: 2px 2px 2px rgb(145, 145, 145);
+
+}
+
+.jumbotron h3 {
+  
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
 }
 
 .jumbotron p {
     font-size: 17px;
-    margin: 0
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+
 }
 
 #panel-heading h3{
     margin: 0
+}
+
+#mission {
+    text-align: center
+}
+
+footer {
+    margin-top: 70px;
+}
+
+footer p {
+    color: rgb(207, 207, 207);
+    text-align: center;
+    padding-top: 5px
+}
+
+#yt-video {
+    margin-top: 20px;
+}
+
+#main {
+    margin-left:0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    background: rgb(226, 225, 225);
+    
+}
+
+.navbar {
+    margin-bottom: 0
 }
