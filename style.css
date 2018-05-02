@@ -1,0 +1,24 @@
+#mailing, #address, #meetings {
+    margin-left: 20px;
+}
+
+#mailing p, #address p, #meetings p{
+    margin:0
+}
+
+.jumbotron {
+    margin: 0
+}
+
+.jumbotron h1 {
+    margin-top: 0px
+}
+
+.jumbotron p {
+    font-size: 17px;
+    margin: 0
+}
+
+#panel-heading h3{
+    margin: 0
+}
