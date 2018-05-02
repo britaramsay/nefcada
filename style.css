@@ -70,3 +70,16 @@ footer p {
 .navbar {
     margin-bottom: 0
 }
+
+#activites {
+    margin-top: 20px;
+    text-align: center
+}
+
+#awards {
+    margin-top: 20px
+}
+
+#invite {
+    margin-top: 15px
+}
