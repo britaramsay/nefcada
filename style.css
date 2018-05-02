@@ -14,7 +14,8 @@
 .jumbotron {
     margin: 0;
     background-image: url('jumbotron-bg.jpg');
-    background-size: 100%
+    background-size: cover;
+    background-repeat: no-repeat
 }
 
 .jumbotron h1 {
