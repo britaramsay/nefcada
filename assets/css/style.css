@@ -1,8 +1,8 @@
-#mailing, #address, #meetings {
+#mailing, #address, #meeting-info {
     margin-left: 20px;
 }
 
-#mailing p, #address p, #meetings p{
+#mailing p, #address p, #meeting-info p{
     margin:0
 }
 
@@ -13,7 +13,7 @@
 
 .jumbotron {
     margin: 0;
-    background-image: url('assets/images/jumbotron-bg.jpg');
+    background-image: url('../images/jumbotron-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat
 }
@@ -96,3 +96,15 @@ footer p {
     margin-bottom: 20px;
     width: 100%
 }
+
+#meetings, #awards {
+    text-align:left;
+    padding-top:5px;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.bg-info, .bg-primary {
+    padding: 10px;
+}
+

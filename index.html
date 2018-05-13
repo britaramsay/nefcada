@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Links to Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
@@ -66,50 +66,59 @@
                             <div class="row">
                                 <div id="mailing">
                                     <h4>Mailing Address</h4>
-                                    <p>NEFCADA<p> 
+                                    <p>NEFCADA</p> 
                                     <p>P.O. Box 57787</p>
                                     <p>Jacksonville, FL, 32241</p>
-                                    
+                                    <br>
                                     <a href="mailto:britaramsay@gmail.com">Email Us</a>
                                 </div>
-                                <hr>
-                                <div id="meetings">
-                                    <p><strong>Monthly Meeting</strong></p>
-                                    <p>3rd Tuesday of each month.</p>
-                                    <p>Board meeting - 10:30 A.M.</p>
-                                    <p>Training Session - 11:30 A.M.</p>
-                                </div>
-                                <hr>
-                                <div id="address">
-                                    <p><strong>Historic Springfield Community Learning Center</strong></p> 
-                                    <p>&amp; Economic Empower Center</p>
-                                    <p>1601 N. Main Street, 2nd Floor</p>
-                                    <p>Jacksonville, FL 32206</p>
+                                <br>
+                                <div id="meeting-info">
+                                    <h4>Meetings held at:</h4>
+                                    <p>Lakeview Health</p>
+                                    <p>1900 Corporate Square Blvd, Jacksonville, FL 32216</p>
+                                    <p>Education/Training room</p><br>
+                                    <a href="activities.html">View Meetings Schedule</a>
                                 </div>
                             </div>
                         </div>
                     </div> 
                     <div id="feedback">
                         <p>Your feedback is needed!</p><p>The NEFCADA board would like to know what specific topics you are interested in learning more about. And which speakers would you like us to invite to speak.</p> <p>Thank you in advance!</p>
-                        <form autocomplete="off">
-                            <div class="form-group">
-                                <label for="speaker">Topic and Speaker for 2018</label>
-                                <textarea class="form-control" id="form-topic"></textarea>
-                            </div>
+                            
+                        <form id="form" autocomplete="off" onchange="mail(this)">
+                            
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="form-name">
+                                <input type="text" name="name" class="form-control" id="form-name">
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="form-email">
+                                <label for="speaker">Topics and Speakers for 2018</label>
+                                <textarea class="form-control" name="speaker" id="form-topic"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <a id="send" class="btn btn-default">Submit</a>
                         </form>
                     </div> <!-- end feedback -->
                 </div> <!-- end col -->
             </div> <!-- end row -->
         </div> <!-- end container -->
+        <script>
+            function mail(form) {
+                var name = form.name.value;
+                var suggestions = form.speaker.value;
+
+                var str="mailto:britaramsay@gmail.com?subject=NEFCADA Feedback&body=";
+
+                if(suggestions.length>0) {
+                    str += suggestions + '%0D%0A%0D%0A';
+                    if(name.length>0) 
+                        str += 'From,%0D%0A' + name
+                    
+                    document.getElementById('send').href=str;
+                }   
+            }
+        
+        </script>
     </body>
     <footer>
         <div class="footer navbar-inverse navbar-fixed-bottom">
