@@ -1,6 +1,6 @@
 var express = require("express"),
     bodyParser = require("body-parser"),
-    exphbs = require("express-handlebars"),
+    exphbs = require("express-secure-handlebars"),
     PORT = process.env.PORT || 8080,
     app = express(),
     routes = require("./controllers/controller.js");

@@ -15,8 +15,6 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<script src="handlebars.runtime.js"></script>
-		<script src="templates.js"></script>
     </head>
 	<body>
 		<div class="container">
@@ -95,7 +93,13 @@
             </div> <!-- end row -->
         </div> <!-- end container -->
 		 <script>
-			// Change active class on navbar items for current page
+            // Change active class on navbar items for current page
+              var source = ('../main.handlebars');
+                var template = Handlebars.compile(source);
+
+            $(document.body).append(template)
+
+
 			var page = "{{page_name}}";
 			$("#"+page).addClass('active');
 
