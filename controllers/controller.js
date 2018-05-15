@@ -1,17 +1,9 @@
 var express = require("express");
-var path = require('path');
 var router = express.Router();
-// var Handlebars = require("handlebars");
-
-// var cat = require("../models/cat.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
   res.render("index", {page_name: 'home'});
-  // var source = ('views/main.handlebars');
-  // var template = Handlebars.compile(source);
-  // res.sendFile(path.join(__dirname + '/../views/layouts/main.html'))
-  // res.render(template)
 });
 
 router.get("/activities", (req, res) => {
