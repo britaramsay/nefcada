@@ -11,12 +11,24 @@
     background: rgba(255, 255, 255, 0.5)
 }
 
+
 .jumbotron {
     margin: 0;
-    background-image: url('../images/jumbotron-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat
+    /* background-image: url('../images/jumbotron-bg.jpg'); */
+    background: white;
+    /* background-size: cover;
+    background-repeat: no-repeat */
+    /* text-align: center; */
+    padding-top: 15px;
 }
+
+.jumbotron img {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
 
 .jumbotron h1 {
     margin-top: 0px;
@@ -26,8 +38,9 @@
 
 .jumbotron h3 {
   
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: black;
+    margin-left: 10vw
 }
 
 .jumbotron p {
